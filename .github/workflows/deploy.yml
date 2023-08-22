@@ -30,7 +30,7 @@ jobs:
     - name: 'Run az commands'
       run: |
         az account show
-        az group list -o table
+        az group list
 
     - name: conventional changelog action
       id: changelog
