@@ -35,9 +35,9 @@ jobs:
     - name: conventional changelog action
       id: changelog
       # https://github.com/TriPSs/conventional-changelog-action
-      uses: TriPSs/conventional-changelog-action@latest
+      uses: TriPSs/conventional-changelog-action@v3
       with:
-        github-token: "${{ secrets.GITHUB_TOKEN }}"}
+        github-token: "${{ secrets.GITHUB_TOKEN }}"
         skip-commit: 'true'
         # version-file: '../packages/package.json'
         skip-tag: 'false'
