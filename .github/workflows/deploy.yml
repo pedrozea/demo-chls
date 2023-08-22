@@ -1,0 +1,67 @@
+name: Deploy to Azure using Bicep
+
+on:
+    push:
+        branches:
+        - main
+    
+    workflow_dispatch:
+
+permissions:
+    id-token: write
+    contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # Log into Azure
+    - name: Login to Azure  
+      uses: azure/login@v1
+      with:
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} 
+
+    - name: 'Run az commands'
+      run: |
+        az account show
+        az group list -o table
+      
+    # - name: Preview Changes from Bicep
+    #   uses: Azure/deployment-what-if-action@v1.0.0
+    #   with:
+    #     subscription: ${{ secrets.AZURE_SUBSCRIPTION_ID }} 
+    #     resourceGroup: ${{ secrets.AZURE_RG }} 
+    #     templateFile: deployment/main.bicep
+
+    # - name: Install and build Bicep
+    #   run: |
+    #     # Instala Bicep CLI
+    #     curl -Lo bicep https://github.com/Azure/bicep/releases/latest/download/bicep-linux-x64
+    #     chmod +x ./bicep
+    #     sudo mv ./bicep /usr/local/bin/bicep
+    #     bicep --version
+
+    #     # Compila los archivos Bicep a ARM Templates
+    #     bicep build main.bicep
+
+    # - name: Deploy to Azure
+    #   run: |
+    #     az deployment group create --resource-group ResourceGroupName --template-file main.json
+
+    # - name: Generate changelog
+    #   uses: mikepenz/release-changelog-builder-action@v2
+    #   with:
+    #     token: ${{ secrets.GITHUB_TOKEN }}
+
+    # - name: Commit changelog
+    #   run: |
+    #     git config --local user.email "action@github.com"
+    #     git config --local user.name "GitHub Action"
+    #     git commit -am "Update CHANGELOG.md"
+    #     git push
