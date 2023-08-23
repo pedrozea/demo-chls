@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/pedrozea/demo-chls/compare/v0.3.0...v0.4.0) (2023-08-23)
+
+
+### Features
+
+* **azure:** List existing RG as table and testing changelog update ([d7f9c34](https://github.com/pedrozea/demo-chls/commit/d7f9c34f58266bc2f6ce02fd62c4b3a7b3c8ff5a))
+
+
+
 # [0.3.0](https://github.com/pedrozea/demo-chls/compare/v0.2.0...v0.3.0) (2023-08-23)
 
 
@@ -35,10 +44,6 @@
 
 * **ghactions:** adding automated changelog action ([a5e5091](https://github.com/pedrozea/demo-chls/commit/a5e509176f05d245364c71d4e86eb015dcf6c363))
 * **ghactions:** adding write permissions to github token ([7e790c9](https://github.com/pedrozea/demo-chls/commit/7e790c979c7c0e4594dd69a08fbe339950354af7))
-
-
-
-## [1.1.1](https://github.com/pedrozea/demo-chls/compare/v1.1.0...v1.1.1) (2023-08-22)
 
 
 
