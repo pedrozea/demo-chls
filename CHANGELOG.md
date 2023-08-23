@@ -1,3 +1,12 @@
+## [0.4.1](https://github.com/pedrozea/demo-chls/compare/v0.4.0...v0.4.1) (2023-08-23)
+
+
+### Bug Fixes
+
+* **ghactions:** Update version of changelog action used ([1129d8a](https://github.com/pedrozea/demo-chls/commit/1129d8ae9aa876eb8a868f40cdee3db2c9f83449))
+
+
+
 # [0.4.0](https://github.com/pedrozea/demo-chls/compare/v0.3.0...v0.4.0) (2023-08-23)
 
 
@@ -34,16 +43,6 @@
 * **ghactions:** creating changelog file ([8b979c9](https://github.com/pedrozea/demo-chls/commit/8b979c90ab97b47a65a36feca4a0c0e9a8369298))
 * **ghactions:** remove changelog file created manually and reordering workflow Jobs ([d1668f5](https://github.com/pedrozea/demo-chls/commit/d1668f5948a50e0c29dae5f2c71f933757a82ad2))
 * **ghactions:** remove options on changelog action to enable tagging and commits ([8be1619](https://github.com/pedrozea/demo-chls/commit/8be161973a98ba7a4421a09981a979e54c8b21bc))
-
-
-
-# [1.2.0](https://github.com/pedrozea/demo-chls/compare/v1.1.1...v1.2.0) (2023-08-22)
-
-
-### Features
-
-* **ghactions:** adding automated changelog action ([a5e5091](https://github.com/pedrozea/demo-chls/commit/a5e509176f05d245364c71d4e86eb015dcf6c363))
-* **ghactions:** adding write permissions to github token ([7e790c9](https://github.com/pedrozea/demo-chls/commit/7e790c979c7c0e4594dd69a08fbe339950354af7))
 
 
 
