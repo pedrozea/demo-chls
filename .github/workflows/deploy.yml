@@ -25,9 +25,6 @@ jobs:
           uses: TriPSs/conventional-changelog-action@v3
           with:
             github-token: "${{ secrets.GITHUB_TOKEN }}"
-            skip-commit: 'true'
-            # version-file: '../packages/package.json'
-            skip-tag: 'true'     
 
     deploy:
         runs-on: ubuntu-latest
