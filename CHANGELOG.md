@@ -1,3 +1,12 @@
+# [0.2.0](https://github.com/pedrozea/demo-chls/compare/v0.1.0...v0.2.0) (2023-08-23)
+
+
+### Features
+
+* **ghactions:** use a custom action independent of the workflow ([7bb16ad](https://github.com/pedrozea/demo-chls/commit/7bb16adf4b04a14ea0ef1d69742c2c8ba3e0d852))
+
+
+
 # [0.1.0](https://github.com/pedrozea/demo-chls/compare/v1.2.0...v0.1.0) (2023-08-23)
 
 
@@ -30,15 +39,6 @@
 ### Features
 
 * **github-actions:** configure CI/CD pipeline with Azure connection using OpenID Connect and list RGs ([3f7d5ec](https://github.com/pedrozea/demo-chls/commit/3f7d5ec44e80a751128364357a17d3b917df8357))
-
-
-
-# [1.0.0](https://github.com/pedrozea/demo-chls/compare/a0c561b8c75395d8ed1f299b47bb9a8dd7a7b272...v1.0.0) (2023-08-22)
-
-
-### Features
-
-* **azure:** add App Service Plan and Web App using main.bicep ([a0c561b](https://github.com/pedrozea/demo-chls/commit/a0c561b8c75395d8ed1f299b47bb9a8dd7a7b272))
 
 
 
