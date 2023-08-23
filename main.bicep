@@ -5,6 +5,7 @@ param namePrefix string = 'pz1'
 // Scope
 targetScope = 'resourceGroup'
 
+//Modules to deploy
 module aspDeploy 'modules/servicePlan.bicep' = {
   name: 'aspDeploy'
   params: {
