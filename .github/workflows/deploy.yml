@@ -16,15 +16,10 @@ jobs:
         runs-on: ubuntu-latest
         
         steps:
-        - name: Checkout code
-          uses: actions/checkout@v2
-
-        - name: conventional changelog action
-          id: changelog
-          # https://github.com/TriPSs/conventional-changelog-action
-          uses: TriPSs/conventional-changelog-action@v3
+        - name: Generate changelog
+          uses: pedrozea/generate-changelog-action@v3.0.2
           with:
-            github-token: "${{ secrets.GITHUB_TOKEN }}"
+            github-token: "${{ secrets.GITHUB_TOKEN }}"     
 
     deploy:
         runs-on: ubuntu-latest
@@ -40,7 +35,22 @@ jobs:
 
         - name: 'Run az commands'
           run: az account show
+       
+          
+    # changelog:
+    #     runs-on: ubuntu-latest
         
+    #     steps:
+    #     - name: Checkout code
+    #       uses: actions/checkout@v2
+
+    #     - name: conventional changelog action
+    #       id: changelog
+    #         # https://github.com/TriPSs/conventional-changelog-action
+    #       uses: TriPSs/conventional-changelog-action@v3
+    #       with:
+    #         github-token: "${{ secrets.GITHUB_TOKEN }}"
+
     # - name: Preview Changes from Bicep
     #   uses: Azure/deployment-what-if-action@v1.0.0
     #   with:
