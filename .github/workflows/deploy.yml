@@ -12,38 +12,37 @@ permissions:
     contents: write
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
+    changelog:
+        runs-on: ubuntu-latest
+        
+        steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
 
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+        - name: conventional changelog action
+          id: changelog
+          # https://github.com/TriPSs/conventional-changelog-action
+          uses: TriPSs/conventional-changelog-action@v3
+          with:
+            github-token: "${{ secrets.GITHUB_TOKEN }}"
+            skip-commit: 'true'
+            # version-file: '../packages/package.json'
+            skip-tag: 'true'     
 
-    # Log into Azure
-    - name: Login to Azure  
-      uses: azure/login@v1
-      with:
-        client-id: ${{ secrets.AZURE_CLIENT_ID }}
-        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} 
+    deploy:
+        runs-on: ubuntu-latest
 
-    - name: 'Run az commands'
-      run: |
-        az account show
-        az group list
+        steps:
+        # Log into Azure
+        - name: Login to Azure  
+          uses: azure/login@v1
+          with:
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} 
 
-    - name: conventional changelog action
-      id: changelog
-      # https://github.com/TriPSs/conventional-changelog-action
-      uses: TriPSs/conventional-changelog-action@v3
-      with:
-        github-token: "${{ secrets.GITHUB_TOKEN }}"
-        skip-commit: 'true'
-        # version-file: '../packages/package.json'
-        skip-tag: 'true'
-        output-file: 'CHANGELOG.md'
-      
-
+        - name: 'Run az commands'
+          run: az account show
         
     # - name: Preview Changes from Bicep
     #   uses: Azure/deployment-what-if-action@v1.0.0
