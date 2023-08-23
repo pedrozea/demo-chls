@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/pedrozea/demo-chls/compare/v0.2.0...v0.3.0) (2023-08-23)
+
+
+### Features
+
+* **azure:** List existing RG and testing changelog action ([7114ccf](https://github.com/pedrozea/demo-chls/commit/7114ccf879f276a6ab087c2394196a01f1556bc6))
+
+
+
 # [0.2.0](https://github.com/pedrozea/demo-chls/compare/v0.1.0...v0.2.0) (2023-08-23)
 
 
@@ -30,15 +39,6 @@
 
 
 ## [1.1.1](https://github.com/pedrozea/demo-chls/compare/v1.1.0...v1.1.1) (2023-08-22)
-
-
-
-# [1.1.0](https://github.com/pedrozea/demo-chls/compare/v1.0.0...v1.1.0) (2023-08-22)
-
-
-### Features
-
-* **github-actions:** configure CI/CD pipeline with Azure connection using OpenID Connect and list RGs ([3f7d5ec](https://github.com/pedrozea/demo-chls/commit/3f7d5ec44e80a751128364357a17d3b917df8357))
 
 
 
