@@ -17,7 +17,7 @@ jobs:
         
         steps:
         - name: Generate changelog
-          uses: pedrozea/generate-changelog-action@v3.0.3
+          uses: pedrozea/generate-changelog-action@v3.1.1
           with:
             github-token: "${{ secrets.GITHUB_TOKEN }}"     
 
