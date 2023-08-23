@@ -1,9 +1,14 @@
-## [0.4.1](https://github.com/pedrozea/demo-chls/compare/v0.4.0...v0.4.1) (2023-08-23)
+# [0.5.0](https://github.com/pedrozea/demo-chls/compare/v0.4.0...v0.5.0) (2023-08-23)
 
 
 ### Bug Fixes
 
 * **ghactions:** Update version of changelog action used ([1129d8a](https://github.com/pedrozea/demo-chls/commit/1129d8ae9aa876eb8a868f40cdee3db2c9f83449))
+
+
+### Features
+
+* **github-actions:** Update changelog action version ([c9d308b](https://github.com/pedrozea/demo-chls/commit/c9d308b851e921a4effde6c5808df95a35f994f4))
 
 
 
