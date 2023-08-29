@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/pedrozea/demo-chls/compare/v0.5.0...v0.6.0) (2023-08-29)
+
+
+### Features
+
+* **azure:** Update az commands to be run with the workflow ([4f90d70](https://github.com/pedrozea/demo-chls/commit/4f90d70d95e6801078e603f3b7e8a8bbb45990cf))
+
+
+
 # [0.5.0](https://github.com/pedrozea/demo-chls/compare/v0.4.0...v0.5.0) (2023-08-23)
 
 
@@ -36,18 +45,6 @@
 ### Features
 
 * **ghactions:** use a custom action independent of the workflow ([7bb16ad](https://github.com/pedrozea/demo-chls/commit/7bb16adf4b04a14ea0ef1d69742c2c8ba3e0d852))
-
-
-
-# [0.1.0](https://github.com/pedrozea/demo-chls/compare/v1.2.0...v0.1.0) (2023-08-23)
-
-
-### Features
-
-* **ghactions:** adding output changelog file ([382de39](https://github.com/pedrozea/demo-chls/commit/382de393078176f3d92bf772e644beed9f46e3ff))
-* **ghactions:** creating changelog file ([8b979c9](https://github.com/pedrozea/demo-chls/commit/8b979c90ab97b47a65a36feca4a0c0e9a8369298))
-* **ghactions:** remove changelog file created manually and reordering workflow Jobs ([d1668f5](https://github.com/pedrozea/demo-chls/commit/d1668f5948a50e0c29dae5f2c71f933757a82ad2))
-* **ghactions:** remove options on changelog action to enable tagging and commits ([8be1619](https://github.com/pedrozea/demo-chls/commit/8be161973a98ba7a4421a09981a979e54c8b21bc))
 
 
 
