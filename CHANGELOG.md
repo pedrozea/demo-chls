@@ -1,3 +1,12 @@
+## [0.6.1](https://github.com/pedrozea/demo-chls/compare/v0.6.0...v0.6.1) (2023-08-29)
+
+
+### Bug Fixes
+
+* **github-actions:** Removing code not used to generate changelogs ([3479bbb](https://github.com/pedrozea/demo-chls/commit/3479bbb098d58911275acfa5167e408266441344))
+
+
+
 # [0.6.0](https://github.com/pedrozea/demo-chls/compare/v0.5.0...v0.6.0) (2023-08-29)
 
 
@@ -36,15 +45,6 @@
 ### Features
 
 * **azure:** List existing RG and testing changelog action ([7114ccf](https://github.com/pedrozea/demo-chls/commit/7114ccf879f276a6ab087c2394196a01f1556bc6))
-
-
-
-# [0.2.0](https://github.com/pedrozea/demo-chls/compare/v0.1.0...v0.2.0) (2023-08-23)
-
-
-### Features
-
-* **ghactions:** use a custom action independent of the workflow ([7bb16ad](https://github.com/pedrozea/demo-chls/commit/7bb16adf4b04a14ea0ef1d69742c2c8ba3e0d852))
 
 
 
